@@ -1,0 +1,70 @@
+Youshu:
+  data_path: './datasets'
+  batch_size_train: 2048
+  batch_size_test: 2048
+  top_k: [ 10, 20, 40, 80 ]
+  neg_num: 1
+  aug_type: "ED"
+  ed_interval: 1
+  embedding_sizes: [ 64 ]
+  layer_nums: [ 1 ]
+  u_i_aug_ratios: [ 0.2 ]
+  u_b_aug_ratios: [ 0.2 ]
+  b_i_aug_ratios: [ 0.2 ]
+  lrs: [ 1.0e-3 ]
+  lambda_4s: [ 1.0e-4 ]
+  lambda_2s: [ 0.04 ]
+  c_temps: [ 0.25 ]
+  lambda_1s: [ 0.8 ]
+  lambda_3s: [ 1.0 ]
+  masking_ratios: [ 0.6 ]
+  epochs: 100
+  test_interval: 5
+
+
+NetEase:
+  data_path: './datasets'
+  batch_size_train: 2048
+  batch_size_test: 2048
+  top_k: [ 10, 20, 40, 80 ]
+  neg_num: 1
+  aug_type: "ED"
+  ed_interval: 1
+  embedding_sizes: [ 64 ]
+  layer_nums: [ 1 ]
+  u_i_aug_ratios: [ 0.1 ]
+  u_b_aug_ratios: [ 0.3 ]
+  b_i_aug_ratios: [ 0.1 ]
+  lrs: [ 1.0e-3 ]
+  lambda_4s: [ 1.0e-4 ]
+  lambda_2s: [ 0.1 ]
+  c_temps: [ 0.25 ]
+  lambda_1s: [ 0.1 ]
+  lambda_3s: [ 1.0 ]
+  masking_ratios: [ 0.5 ]
+  epochs: 50
+  test_interval: 5
+
+
+iFashion:
+  data_path: './datasets'
+  batch_size_train: 2048
+  batch_size_test: 2048
+  top_k: [ 10, 20, 40, 80 ]
+  neg_num: 1
+  aug_type: "ED"
+  ed_interval: 1
+  embedding_sizes: [ 64 ]
+  layer_nums: [ 1 ]
+  u_i_aug_ratios: [ 0.2 ]
+  u_b_aug_ratios: [ 0.2 ]
+  b_i_aug_ratios: [ 0 ]
+  lrs: [ 1.0e-3 ]
+  lambda_4s: [ 4.0e-5 ]
+  lambda_2s: [ 0.25 ]
+  c_temps: [ 0.2 ]
+  lambda_1s: [ 0.1 ]
+  lambda_3s: [ 0.4 ]
+  masking_ratios: [ 0.2 ]
+  epochs: 50
+  test_interval: 5 
